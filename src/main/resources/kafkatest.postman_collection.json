@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "b0eb3345-1b57-4f35-b428-686fe5185e5f",
+		"name": "kafkatest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:9090/addCustmer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"custId\": 1,\r\n        \"custName\": \"satish\"\r\n    },\r\n    {\r\n        \"custId\": 2,\r\n        \"custName\": \"hrutvi\"\r\n    },\r\n    {\r\n        \"custId\": 3,\r\n        \"custName\": \"satya\"\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/addCustmer",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"addCustmer"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:9090/addCustmer",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\r\n    {\r\n        \"custId\": 1,\r\n        \"custName\": \"satish\"\r\n    },\r\n    {\r\n        \"custId\": 2,\r\n        \"custName\": \"hrutvi\"\r\n    },\r\n    {\r\n        \"custId\": 3,\r\n        \"custName\": \"satya\"\r\n    }\r\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:9090/addCustmer",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"addCustmer"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "49"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 28 Apr 2023 07:02:54 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Customer Record Added to kafka Queue Successfully"
+				}
+			]
+		}
+	]
+}
